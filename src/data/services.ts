@@ -33,7 +33,7 @@ export const services: Service[] = [
         ],
       },
       {
-        heading: "Roadmap Package (5 sessions)",
+        heading: "Roadmap Package (4 sessions)",
         body: [
           "We will provide you with a framework of resources and give you initial guidance on the college application process. This typically includes Common Application, UC application support, essay brainstorming, editing, and college list creation.",
         ],
