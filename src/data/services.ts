@@ -84,14 +84,15 @@ export const services: Service[] = [
   },
   {
     slug: "gap-year-advising",
-    title: "Gap Year Advising",
+    title: "Career/Gap-Year Advising",
     summary:
-      "Packages designed to help parents and students navigate different gap-year offerings so they can find the best fit.",
+      "Packages designed to help parents and students navigate career exploration and gap-year offerings so they can find the best fit.",
     image: "/images/unsplash-image-b7CRDcwfNFU.jpg",
     sections: [
       {
         body: [
           "Packages for gap year advising are designed to help parents and students navigate different offerings so they can find the best fit. Programs are beneficial for students looking to learn more about themselves and discover their values and goals.",
+          "We also work with high school students on career exploration, helping them connect their interests and strengths to potential career pathways as they plan their next steps.",
         ],
       },
       {

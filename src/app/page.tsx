@@ -16,10 +16,11 @@ const homeServices = [
     ],
   },
   {
-    title: "Gap-Year Advising",
+    title: "Career/Gap-Year Advising",
     subtitle: "Packages & hourly sessions",
     href: "/services#gap-year-advising",
     bullets: [
+      "Career exploration to connect a student's interests and strengths to potential pathways",
       "Advising on the benefits of taking a gap year and how it can fit with each student's goals",
       "Exploration of programs that promote personal growth, global experience, and professional development",
     ],
