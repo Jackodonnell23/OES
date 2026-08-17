@@ -13,11 +13,11 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
-            src="/images/oes-logo.jpg"
+            src="/images/oes-logo-transparent.png"
             alt={site.name}
-            width={56}
-            height={56}
-            className="rounded-full object-cover"
+            width={105}
+            height={64}
+            className="object-contain"
           />
         </Link>
 
