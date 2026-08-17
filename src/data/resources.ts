@@ -14,8 +14,3 @@ export const schoolVisits = {
   listHref:
     "https://docs.google.com/document/d/1phkR3IPdRiAmpYWGiqUeD-2Mf75NuVZJubdta_NWKwY/edit?tab=t.0",
 };
-
-export const webinar = {
-  title: "Webinar: Understanding the College Admissions Process",
-  segment: "Student-Athlete Advising: 25:31 - 45:00",
-};

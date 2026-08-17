@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import { resourceLinks, schoolVisits, webinar } from "@/data/resources";
+import { resourceLinks, schoolVisits } from "@/data/resources";
 
 export const metadata: Metadata = {
   title: "Resources",
@@ -50,13 +50,6 @@ export default function ResourcesPage() {
           >
             See the full list →
           </a>
-        </div>
-
-        <div>
-          <h2 className="font-serif text-2xl font-semibold text-primary">
-            {webinar.title}
-          </h2>
-          <p className="mt-3 text-foreground/75">{webinar.segment}</p>
         </div>
 
         <div className="rounded-2xl bg-cream p-8 text-center">
