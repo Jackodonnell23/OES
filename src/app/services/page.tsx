@@ -49,11 +49,19 @@ export default function ServicesPage() {
                         {section.heading}
                       </h3>
                     )}
-                    <ul className="mt-2 space-y-1.5 text-sm text-foreground/75">
-                      {section.body.map((line, lineIdx) => (
-                        <li key={lineIdx}>{line}</li>
-                      ))}
-                    </ul>
+                    {section.list ? (
+                      <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-foreground/75">
+                        {section.body.map((line, lineIdx) => (
+                          <li key={lineIdx}>{line}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <div className="mt-2 space-y-2 text-sm text-foreground/75">
+                        {section.body.map((line, lineIdx) => (
+                          <p key={lineIdx}>{line}</p>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

@@ -6,6 +6,7 @@ export type Service = {
   sections: {
     heading?: string;
     body: string[];
+    list?: boolean;
   }[];
 };
 
@@ -25,6 +26,7 @@ export const services: Service[] = [
       },
       {
         heading: "Comprehensive Packages",
+        list: true,
         body: [
           "Freshman - Senior Comprehensive (4 years)",
           "Sophomore - Senior Comprehensive (3 years)",
@@ -54,6 +56,7 @@ export const services: Service[] = [
       },
       {
         heading: "What's included",
+        list: true,
         body: [
           "Meetings with parent(s) & student",
           "Review of all relevant school documents and any educational testing",
@@ -93,6 +96,7 @@ export const services: Service[] = [
       },
       {
         heading: "What's included",
+        list: true,
         body: [
           "Meetings with parent(s) & student",
           "Review of all relevant documents",
