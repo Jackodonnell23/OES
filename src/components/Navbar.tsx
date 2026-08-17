@@ -31,12 +31,14 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
+          <a
+            href={site.consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
           >
             Free Consultation
-          </Link>
+          </a>
         </nav>
 
         <button
@@ -66,13 +68,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
+          <a
+            href={site.consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-2 rounded-full bg-primary px-5 py-2 text-center text-sm font-semibold text-white"
             onClick={() => setOpen(false)}
           >
             Free Consultation
-          </Link>
+          </a>
         </nav>
       )}
     </header>

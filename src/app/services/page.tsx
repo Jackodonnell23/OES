@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import { services } from "@/data/services";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -57,12 +57,14 @@ export default function ServicesPage() {
                   </div>
                 ))}
               </div>
-              <Link
-                href="/contact"
+              <a
+                href={site.consultationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
               >
                 Schedule a Free Consultation
-              </Link>
+              </a>
             </div>
           </div>
         ))}

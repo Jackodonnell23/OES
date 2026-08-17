@@ -55,12 +55,14 @@ export default function Home() {
             College Counseling &amp; Educational Consulting
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85">{site.description}</p>
-          <Link
-            href="/contact"
+          <a
+            href={site.consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-semibold text-primary transition-transform hover:scale-105 hover:bg-cream"
           >
             Free Consultation
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -107,12 +109,14 @@ export default function Home() {
             your educational journey. Our team is ready to provide personalized
             guidance tailored to your needs.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={site.consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-white px-8 py-3 text-sm font-semibold text-primary transition-transform hover:scale-105 hover:bg-cream"
           >
             Free Consultation
-          </Link>
+          </a>
         </div>
       </section>
 

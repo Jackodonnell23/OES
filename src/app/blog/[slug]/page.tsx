@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost } from "@/data/blog";
+import { site } from "@/data/site";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -71,12 +72,14 @@ export default async function BlogPostPage({
           <p className="text-foreground/75">
             Interested in working together? Schedule a free consultation.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={site.consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-4 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
           >
             Free Consultation
-          </Link>
+          </a>
         </div>
       </div>
     </article>

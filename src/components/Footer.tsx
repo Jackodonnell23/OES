@@ -39,12 +39,14 @@ export default function Footer() {
                 {site.email}
               </a>
             </p>
-            <Link
-              href="/contact"
+            <a
+              href={site.consultationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-block rounded-full bg-white px-5 py-2 text-sm font-semibold text-primary hover:bg-cream"
             >
               Schedule a Free Consultation
-            </Link>
+            </a>
           </div>
         </div>
 
