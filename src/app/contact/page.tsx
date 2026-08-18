@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
+import ContactForm from "@/components/ContactForm";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -12,22 +13,23 @@ export default function ContactPage() {
     <div>
       <PageHero
         title="Contact Us"
-        subtitle="Interested in working together? Reach out and we will be in touch shortly. We can't wait to hear from you!"
+        subtitle="Interested in working together? Fill out the form below and we will be in touch shortly. We can't wait to hear from you!"
       />
 
-      <section className="mx-auto max-w-2xl px-6 py-16 text-center">
-        <p className="text-foreground/75">
-          The fastest way to reach {site.shortName} is by email. Tell us a bit about
-          your student and what you&apos;re looking for, and we&apos;ll follow up to
-          schedule your free consultation.
+      <section className="mx-auto max-w-xl px-6 py-16">
+        <ContactForm />
+
+        <p className="mt-8 text-center text-sm text-foreground/60">
+          Prefer email? Reach us directly at{" "}
+          <a
+            href={`mailto:${site.email}?subject=Free%20Consultation%20Request`}
+            className="font-medium text-primary hover:underline"
+          >
+            {site.email}
+          </a>
+          <br />
+          {site.location}
         </p>
-        <a
-          href={`mailto:${site.email}?subject=Free%20Consultation%20Request`}
-          className="mt-8 inline-block rounded-full bg-primary px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
-        >
-          Email {site.email}
-        </a>
-        <p className="mt-4 text-sm text-foreground/60">{site.location}</p>
       </section>
     </div>
   );
