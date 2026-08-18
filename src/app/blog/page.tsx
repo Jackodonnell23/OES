@@ -3,10 +3,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import { blogPosts } from "@/data/blog";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Blog",
   description: "News, advice, and updates from OES.",
+  alternates: { canonical: `${site.url}/blog` },
+  openGraph: {
+    type: "website",
+    title: "Blog",
+    description: "News, advice, and updates from OES.",
+    url: `${site.url}/blog`,
+  },
 };
 
 export default function BlogIndexPage() {

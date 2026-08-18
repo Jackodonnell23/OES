@@ -17,7 +17,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://odonnelledu.com"),
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} | ${site.tagline}`,
     template: `%s | ${site.shortName}`,
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://odonnelledu.com",
+    url: site.url,
     siteName: site.name,
     title: `${site.name} | ${site.tagline}`,
     description: site.description,

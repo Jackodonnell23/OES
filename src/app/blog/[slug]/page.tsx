@@ -17,7 +17,27 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
-  return { title: post.title, description: post.excerpt };
+
+  const url = `${site.url}/blog/${post.slug}`;
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.excerpt,
+      url,
+      publishedTime: post.date,
+      authors: [site.name],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
+  };
 }
 
 export default async function BlogPostPage({
@@ -29,8 +49,27 @@ export default async function BlogPostPage({
   const post = getBlogPost(slug);
   if (!post) notFound();
 
+  const url = `${site.url}/blog/${post.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: `${site.url}${post.image}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    url,
+    mainEntityOfPage: url,
+    author: { "@type": "Organization", name: site.name, url: site.url },
+    publisher: { "@type": "Organization", name: site.name, url: site.url },
+  };
+
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="relative h-[40vh] min-h-[320px]">
         <Image src={post.image} alt={post.title} fill priority className="object-cover" />
         <div className="absolute inset-0 bg-primary/60" />
@@ -72,14 +111,22 @@ export default async function BlogPostPage({
           <p className="text-foreground/75">
             Interested in working together? Schedule a free consultation.
           </p>
-          <a
-            href={site.consultationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
-          >
-            Free Consultation
-          </a>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href={site.consultationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-light"
+            >
+              Free Consultation
+            </a>
+            <Link
+              href="/services"
+              className="inline-block rounded-full border border-primary px-6 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/5"
+            >
+              See Our Services
+            </Link>
+          </div>
         </div>
       </div>
     </article>

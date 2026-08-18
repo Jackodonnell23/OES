@@ -10,6 +10,12 @@ export default function Footer() {
             <p className="font-serif text-lg font-semibold">{site.shortName}</p>
             <p className="mt-2 text-sm text-white/70">{site.tagline}</p>
             <p className="mt-4 text-sm text-white/70">{site.location}</p>
+            <a
+              href={site.phoneHref}
+              className="mt-1 block text-sm text-white/70 hover:text-accent"
+            >
+              {site.phone}
+            </a>
           </div>
 
           <div>
