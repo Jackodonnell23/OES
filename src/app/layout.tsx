@@ -17,11 +17,25 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://odonnelledu.com"),
   title: {
     default: `${site.name} | ${site.tagline}`,
     template: `%s | ${site.shortName}`,
   },
   description: site.description,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://odonnelledu.com",
+    siteName: site.name,
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+  },
 };
 
 export default function RootLayout({
