@@ -94,6 +94,9 @@ export default function Home() {
             </Link>
           ))}
         </div>
+        <p className="mt-10 text-center text-sm text-foreground/60">
+          Serving in-person clients in Bozeman and virtual clients nationwide.
+        </p>
       </section>
 
       <section className="relative overflow-hidden bg-primary py-20 text-white">
