@@ -41,7 +41,7 @@ export default function Home() {
     <div>
       <section className="relative flex min-h-[70vh] items-center overflow-hidden">
         <Image
-          src="/images/unsplash-image-ljvKJ84BV3o.jpg"
+          src="/images/bridger-mountains-hero.jpg"
           alt=""
           fill
           priority
