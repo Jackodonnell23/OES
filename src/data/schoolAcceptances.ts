@@ -32,14 +32,14 @@ export const schoolAcceptances: SchoolAcceptance[] = [
     name: "Marquette University",
     logo: "/images/school-logos/marquette-university.png",
   },
-  { name: "Middlebury College", logo: "/images/school-logos/middlebury-college.png" },
+  { name: "Middlebury College", logo: "/images/school-logos/middlebury-college.gif" },
   {
     name: "Montana State University",
     logo: "/images/school-logos/montana-state-university.png",
   },
   {
     name: "New York University",
-    logo: "/images/school-logos/new-york-university.png",
+    logo: "/images/school-logos/new-york-university.svg",
   },
   {
     name: "Northeastern University",
@@ -55,22 +55,22 @@ export const schoolAcceptances: SchoolAcceptance[] = [
     logo: "/images/school-logos/santa-clara-university.png",
   },
   { name: "Seattle University", logo: "/images/school-logos/seattle-university.png" },
-  { name: "UC Davis", logo: "/images/school-logos/uc-davis.png" },
-  { name: "UCLA", logo: "/images/school-logos/ucla.png" },
+  { name: "UC Davis", logo: "/images/school-logos/uc-davis.svg" },
+  { name: "UCLA", logo: "/images/school-logos/ucla.svg" },
   { name: "UMASS Amherst", logo: "/images/school-logos/umass-amherst.png" },
   {
     name: "University of Colorado",
-    logo: "/images/school-logos/university-of-colorado.png",
+    logo: "/images/school-logos/university-of-colorado.svg",
   },
   { name: "University of Denver", logo: "/images/school-logos/university-of-denver.png" },
   { name: "University of Oregon", logo: "/images/school-logos/university-of-oregon.png" },
   {
     name: "University of Puget Sound",
-    logo: "/images/school-logos/university-of-puget-sound.png",
+    logo: "/images/school-logos/university-of-puget-sound.svg",
   },
   {
     name: "University of San Diego",
-    logo: "/images/school-logos/university-of-san-diego.png",
+    logo: "/images/school-logos/university-of-san-diego.svg",
   },
   {
     name: "University of San Francisco",
@@ -83,7 +83,7 @@ export const schoolAcceptances: SchoolAcceptance[] = [
   { name: "University of Utah", logo: "/images/school-logos/university-of-utah.png" },
   {
     name: "University of Washington",
-    logo: "/images/school-logos/university-of-washington.png",
+    logo: "/images/school-logos/university-of-washington.svg",
   },
   {
     name: "Washington State University",
