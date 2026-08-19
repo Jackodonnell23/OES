@@ -12,11 +12,11 @@ export const schoolAcceptances: SchoolAcceptance[] = [
   },
   {
     name: "Cal Poly San Luis Obispo",
-    logo: "/images/school-logos/cal-poly-san-luis-obispo.png",
+    logo: "/images/school-logos/cal-poly-san-luis-obispo.svg",
   },
   {
     name: "Chapman University",
-    logo: "/images/school-logos/chapman-university.png",
+    logo: "/images/school-logos/chapman-university.svg",
   },
   { name: "Colorado College", logo: "/images/school-logos/colorado-college.png" },
   {
@@ -30,7 +30,7 @@ export const schoolAcceptances: SchoolAcceptance[] = [
   },
   {
     name: "Marquette University",
-    logo: "/images/school-logos/marquette-university.png",
+    logo: "/images/school-logos/marquette-university.svg",
   },
   { name: "Middlebury College", logo: "/images/school-logos/middlebury-college.gif" },
   {
