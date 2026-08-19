@@ -27,3 +27,32 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+@keyframes school-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  88% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.animate-school-fade {
+  animation: school-fade 2.6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-school-fade {
+    animation: none;
+  }
+}
