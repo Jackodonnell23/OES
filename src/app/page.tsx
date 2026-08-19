@@ -95,7 +95,8 @@ export default function Home() {
           ))}
         </div>
         <p className="mt-10 text-center text-sm text-foreground/60">
-          Serving in-person clients in Bozeman and virtual clients nationwide.
+          Proudly serving Bozeman families in person, and students across the
+          country virtually.
         </p>
       </section>
 
