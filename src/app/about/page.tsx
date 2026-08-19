@@ -23,12 +23,13 @@ export default function AboutPage() {
               i % 2 === 1 ? "md:[&>div:first-child]:order-2" : ""
             }`}
           >
-            <div className="relative aspect-square overflow-hidden rounded-2xl">
+            <div className="overflow-hidden rounded-2xl bg-cream">
               <Image
                 src={member.image}
                 alt={member.name}
-                fill
-                className="object-cover"
+                width={member.imageWidth}
+                height={member.imageHeight}
+                className="h-auto w-full"
               />
             </div>
             <div className="md:col-span-2">
