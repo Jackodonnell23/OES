@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navLinks, site } from "@/data/site";
 
@@ -5,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border bg-primary text-white">
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-10 sm:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-serif text-lg font-semibold">{site.shortName}</p>
             <p className="mt-2 text-sm text-white/70">{site.tagline}</p>
@@ -53,6 +54,27 @@ export default function Footer() {
             >
               Schedule a Free Consultation
             </a>
+          </div>
+
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-white/50">
+              Professional Membership
+            </p>
+            <a
+              href="https://www.iecaonline.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block rounded-lg bg-white p-3 transition-transform hover:scale-105"
+            >
+              <Image
+                src="/images/ieca-logo.png"
+                alt="Independent Educational Consultants Association"
+                width={160}
+                height={48}
+                className="h-auto w-40"
+              />
+            </a>
+            <p className="mt-3 text-sm text-white/70">Proud member of IECA.</p>
           </div>
         </div>
 
