@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import SchoolAcceptancesCarousel from "@/components/SchoolAcceptancesCarousel";
+import SchoolAcceptancesMarquee from "@/components/SchoolAcceptancesMarquee";
 import { schoolAcceptances } from "@/data/schoolAcceptances";
 
 export const metadata: Metadata = {
@@ -13,8 +13,8 @@ export default function SchoolAcceptancesPage() {
     <div>
       <PageHero title="School Acceptances" />
 
-      <section className="mx-auto max-w-3xl px-6 py-16">
-        <SchoolAcceptancesCarousel schools={schoolAcceptances} />
+      <section className="py-16 sm:py-20">
+        <SchoolAcceptancesMarquee schools={schoolAcceptances} />
       </section>
     </div>
   );
