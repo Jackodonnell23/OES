@@ -12,8 +12,8 @@ export const team: TeamMember[] = [
     name: "Jack O'Donnell",
     role: "Founder / Consultant",
     image: "/images/jack-odonnell.jpeg",
-    imageWidth: 546,
-    imageHeight: 594,
+    imageWidth: 1000,
+    imageHeight: 1500,
     bio: [
       "Jack has worked in education throughout his professional career. He worked for two independent schools over the past four years (Stevenson School and Hawai'i Preparatory Academy). Teaching, residential life, coaching, and admissions work were all facets of his previous jobs. Jack received a BA in History from the University of Denver and an MA in Education & Curriculum. His experience in private education influenced his decision to start OES in 2024. Jack believes that through personalized guidance your child can find the ideal environment to further their learning.",
       "Jack grew up in Bozeman, MT, and has since returned to his hometown. Jack possesses a warm and accepting demeanor that enables him to forge genuine connections with a wide array of clients and students. With a deep understanding of the college application process, Jack is committed to helping students navigate their paths to success.",
