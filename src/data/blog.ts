@@ -115,6 +115,104 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
+    slug: "august-oes-newsletter",
+    title: "August OES Newsletter",
+    date: "2026-08-01",
+    displayDate: "Aug 1, 2026",
+    image: "/images/unsplash-image-2JIvboGLeho.jpg",
+    excerpt:
+      "The Common App opens today for the Class of 2027 — what seniors and juniors should do this month, free Montana applications, and key SAT/ACT dates.",
+    content: [
+      { type: "p", text: "Dear OES Community," },
+      {
+        type: "p",
+        text: "The Common App opens today for the Class of 2027. This is the official start of the application cycle. Seniors, the next three months matter most.",
+      },
+      { type: "h3", text: "Seniors (Class of 2027): Make the list real." },
+      {
+        type: "p",
+        text: "The Common App is live. Three things belong on your plate this month: a college list, signing up/logging in to your Common App account and updating the core sections, and a revised draft of the personal essay.",
+      },
+      {
+        type: "p",
+        text: "If your senior wrote a first draft this summer, this is the month it becomes a strong one. If they haven't started, reach out, and we'll move fast. The essay remains the one piece of this application no AI tool can write for them, and admissions officers are reading thoroughly for a genuine voice.",
+      },
+      { type: "h3", text: "Seniors: Free Montana applications open today." },
+      {
+        type: "p",
+        text: "Montana residents can apply to Montana State University and the University of Montana for FREE starting August 1. It's one of the easiest wins of the whole process: an in-state option submitted early, at no cost, the perfect first application.",
+      },
+      { type: "h3", text: "Juniors (Class of 2028): Start the process." },
+      {
+        type: "p",
+        text: "The Common App opening is your cue to start paying attention, not time to panic. Two moves for the rest of summer: take an informal campus walk if you're near any college, and research colleges to build an initial list. The more you prepare now, the easier senior year will be.",
+      },
+      { type: "h3", text: "All families: Podcast worth your time." },
+      {
+        type: "p",
+        text: "If you want a smart, plain-spoken guide to this whole process, I recommend [Tests and the Rest](https://open.spotify.com/show/7uYu0r083Ml9fZqFzLK8RX), hosted by Amy Seeley and Mike Bergin. Episodes run about 25 minutes, ideal for most commutes.",
+      },
+      {
+        type: "p",
+        text: "Their recent episode makes a point I repeat with families constantly: the flashiest, most prestigious school on the list often isn't the right one. Prestige and fit are not the same thing, and the students who thrive are the ones who chase fit. Give it a listen before you draft your first list.",
+      },
+      { type: "h3", text: "Test prep: Upcoming SAT & ACT dates." },
+      {
+        type: "p",
+        text: "If your student still needs to test or retest, register early to save a spot. Seats fill and late fees apply.",
+      },
+      { type: "p", text: "The Aug. 22 SAT closes for registration on Aug. 7." },
+      {
+        type: "p",
+        text: "[SAT](https://satsuite.collegeboard.org/sat/dates-deadlines) — Upcoming dates:",
+      },
+      {
+        type: "list",
+        items: [
+          "Aug. 22, 2026 — Registration deadline: Aug. 7",
+          "Sept. 12, 2026 — Registration deadline: Aug. 28",
+          "Oct. 3, 2026 — Registration deadline: Sept. 18",
+        ],
+      },
+      {
+        type: "p",
+        text: "[ACT](https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html) — Upcoming national dates (these apply to Montana students):",
+      },
+      {
+        type: "list",
+        items: [
+          "Sept. 19, 2026 — Registration deadline: Aug. 14",
+          "Oct. 17, 2026 — Registration deadline: Sept. 11",
+        ],
+      },
+      { type: "h3", text: "Key dates" },
+      {
+        type: "list",
+        items: [
+          "August 1: Common App opens for the Class of 2027",
+          "August 1: Free applications open for Montana State University and University of Montana (MT residents)",
+          "August 7: SAT registration deadline for the Aug. 22 test",
+          "October 1: FAFSA opens for the 2027–28 academic year",
+          "October 1: CSS Profile opens for 2027–28 (required by many private colleges)",
+        ],
+      },
+      { type: "h3", text: "Work with OES" },
+      {
+        type: "p",
+        text: "O'Donnell Educational Solutions partners with families across four areas: college counseling, career counseling, gap year advising, and boarding school consulting. Whether your student is creating a list, contemplating a gap year, exploring career options, or thinking about a boarding school transfer, guidance helps clarify the process and reduce stress.",
+      },
+      {
+        type: "p",
+        text: "If you're interested in my services or know someone who might benefit, please have them reach out or [book a free consultation](https://calendar.app.google/cYBbNECYmGHZxFyD7).",
+      },
+      {
+        type: "p",
+        text: "Here's to a strong start this school year. Enjoy the rest of your summer.",
+      },
+      { type: "p", text: "- Jack O'Donnell" },
+    ],
+  },
+  {
     slug: "summer-reading-for-parents",
     title: "Summer Reading for Parents",
     date: "2026-07-06",
