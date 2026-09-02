@@ -49,13 +49,14 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-primary/70" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 text-white">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-            {site.location}
-          </p>
-          <h1 className="mt-4 max-w-2xl font-serif text-4xl font-semibold sm:text-5xl md:text-6xl">
+          <h1 className="max-w-2xl font-serif text-4xl font-semibold sm:text-5xl md:text-6xl">
             College Counseling &amp; Educational Consulting
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/85">{site.description}</p>
+          <p className="mt-6 max-w-xl text-lg text-white/85">
+            OES helps students find the right academic and personal fit through
+            personalized college counseling, gap-year advising, and boarding school
+            consulting.
+          </p>
           <a
             href={site.consultationUrl}
             target="_blank"
