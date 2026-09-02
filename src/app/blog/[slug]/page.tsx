@@ -1,9 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost } from "@/data/blog";
 import { site } from "@/data/site";
+
+// Supports simple [label](url) markdown links inside otherwise-plain block text.
+function renderInlineText(text: string): ReactNode[] {
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+
+  while ((match = linkPattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push(
+      <a
+        key={key++}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline underline-offset-2 hover:text-primary-light"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -99,12 +131,12 @@ export default async function BlogPostPage({
             return (
               <ul key={i} className="list-disc space-y-2 pl-5">
                 {block.items.map((item, itemIdx) => (
-                  <li key={itemIdx}>{item}</li>
+                  <li key={itemIdx}>{renderInlineText(item)}</li>
                 ))}
               </ul>
             );
           }
-          return <p key={i}>{block.text}</p>;
+          return <p key={i}>{renderInlineText(block.text)}</p>;
         })}
 
         <div className="rounded-2xl bg-cream p-8 text-center">

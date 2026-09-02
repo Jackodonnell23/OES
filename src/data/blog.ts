@@ -15,6 +15,106 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "september-oes-newsletter",
+    title: "September OES Newsletter",
+    date: "2026-09-02",
+    displayDate: "Sep 2, 2026",
+    image: "/images/unsplash-image-8ePZbdxnpi0.jpg",
+    excerpt:
+      "Early Decision and Early Action deadlines are approaching — what seniors and juniors need to do this month, plus FAFSA, CSS Profile, and key SAT/ACT dates.",
+    content: [
+      { type: "p", text: "Dear OES Families," },
+      {
+        type: "p",
+        text: "The Early Decision and Early Action deadlines fall on October 15, November 1, 15, and December 1. September is when the Common Application moves from in progress to nearly done.",
+      },
+      { type: "p", text: "Here's an overview for the month." },
+      {
+        type: "h3",
+        text: "Seniors (Class of 2027): Start the busy work of early applications.",
+      },
+      {
+        type: "p",
+        text: "Since all of you have EA or ED deadlines, here is what you need to focus on:",
+      },
+      {
+        type: "list",
+        items: [
+          "Finished, revised personal essay",
+          "Every supplemental essay drafted for their early action schools",
+          "Letters of recommendation formally requested from teachers",
+          "Early applications should essentially be finished by mid-October, so November 1 is a review-and-submit date, not a scramble.",
+        ],
+      },
+      { type: "h3", text: "Juniors (Class of 2028): PSAT." },
+      {
+        type: "p",
+        text: "The PSAT/NMSQT is administered at most high schools in October. For high scorers, it's the entry point to National Merit, and for everyone it's a low-stakes read on where SAT/ACT prep should start.",
+      },
+      {
+        type: "p",
+        text: "This is also the month to begin a genuine college list. Think of what your student actually wants: size, distance from home, cost, the campus location and the feel of a place.",
+      },
+      { type: "h3", text: "Get ready for FAFSA & CSS." },
+      {
+        type: "p",
+        text: "The FAFSA for the 2027–28 school year opens October 1. If your family's income is below $200,000, I suggest completing the FAFSA.",
+      },
+      {
+        type: "p",
+        text: "Many private colleges also require the CSS Profile, which opens on October 1; check whether any school on your student's list requires it.",
+      },
+      { type: "h3", text: "Test prep: Upcoming SAT & ACT dates." },
+      {
+        type: "p",
+        text: "The Oct. 3 SAT is the last national SAT before Nov. 1 deadlines.",
+      },
+      {
+        type: "p",
+        text: "[SAT](https://satsuite.collegeboard.org/sat/dates-deadlines) — Upcoming dates:",
+      },
+      { type: "list", items: ["Oct. 3, 2026 — Registration deadline: Sept. 18"] },
+      {
+        type: "p",
+        text: "[ACT](https://www.act.org/content/act/en/products-and-services/the-act/registration/test-dates.html) — Upcoming national dates (these apply to Montana students):",
+      },
+      {
+        type: "list",
+        items: [
+          "Oct. 17, 2026 — Registration deadline: Sept. 11",
+          "Dec. 12, 2026 — Registration deadline: Nov. 6",
+        ],
+      },
+      {
+        type: "p",
+        text: "Verify exact SAT and ACT dates and registration deadlines at [collegeboard.org](https://satsuite.collegeboard.org/sat/registration) and [act.org](https://my.act.org/).",
+      },
+      { type: "h3", text: "Key dates" },
+      {
+        type: "list",
+        items: [
+          "September 11: ACT registration deadline for the Oct. 17 test",
+          "September 18: SAT registration deadline for the Oct. 3 test",
+          "October (school-scheduled): PSAT/NMSQT for juniors — confirm the date with your school",
+          "October 1: FAFSA opens for the 2027–28 academic year",
+          "October 1: CSS Profile opens for 2027–28 (required by many private colleges)",
+          "November 1: Most Early Decision / Early Action application deadlines",
+        ],
+      },
+      { type: "h3", text: "Work with OES" },
+      {
+        type: "p",
+        text: "O'Donnell Educational Solutions partners with families across four areas: college counseling, career counseling, gap year advising, and boarding school consulting. Whether your student is finishing early applications, building a list, weighing a gap year, or considering a move to boarding school, the right guidance at the right moment makes the whole process clearer and less stressful.",
+      },
+      {
+        type: "p",
+        text: "If you're interested in my services or know someone who might benefit, please have them reach out to [book a free consultation](https://calendar.app.google/cYBbNECYmGHZxFyD7).",
+      },
+      { type: "p", text: "Here's to a focused fall. As always, I'm here if you have any questions." },
+      { type: "p", text: "Jack O'Donnell" },
+    ],
+  },
+  {
     slug: "summer-reading-for-parents",
     title: "Summer Reading for Parents",
     date: "2026-07-06",
