@@ -103,7 +103,14 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="relative h-[40vh] min-h-[320px]">
-        <Image src={post.image} alt={post.title} fill priority className="object-cover" />
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          priority
+          className="object-cover"
+          style={{ objectPosition: post.imagePosition ?? "center" }}
+        />
         <div className="absolute inset-0 bg-primary/60" />
         <div className="relative mx-auto flex h-full max-w-3xl flex-col justify-end px-6 pb-10 text-white">
           <Link href="/blog" className="text-sm font-medium text-white/80 hover:underline">

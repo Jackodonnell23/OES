@@ -9,6 +9,7 @@ export type BlogPost = {
   date: string; // ISO date
   displayDate: string;
   image: string;
+  imagePosition?: string; // CSS object-position for the hero banner crop; defaults to center
   excerpt: string;
   content: ContentBlock[];
 };
@@ -435,6 +436,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-03",
     displayDate: "Jun 3, 2026",
     image: "/images/jack-odonnell.jpeg",
+    imagePosition: "center 32%",
     excerpt:
       "The numbers behind why more Montana and Mountain West families are turning to private counselors — and what an IEC actually does.",
     content: [
