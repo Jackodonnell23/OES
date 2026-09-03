@@ -58,7 +58,7 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-white/50">
-              Professional Membership
+              Associate Member
             </p>
             <a
               href="https://www.iecaonline.com/"
