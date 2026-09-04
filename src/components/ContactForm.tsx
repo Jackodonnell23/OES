@@ -83,6 +83,30 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="phone" className="block text-sm font-medium text-foreground/80">
+          Phone
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          className="mt-1.5 w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:border-primary focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="location" className="block text-sm font-medium text-foreground/80">
+          Location (City, State)
+        </label>
+        <input
+          id="location"
+          name="location"
+          type="text"
+          className="mt-1.5 w-full rounded-lg border border-border px-4 py-2.5 text-sm focus:border-primary focus:outline-none"
+        />
+      </div>
+
+      <div>
         <label htmlFor="message" className="block text-sm font-medium text-foreground/80">
           Message
         </label>
