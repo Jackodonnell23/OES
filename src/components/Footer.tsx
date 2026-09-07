@@ -77,9 +77,8 @@ export default function Footer() {
             <p className="mt-3 text-sm text-white/70">Proud member of IECA.</p>
             <p className="mt-3 text-sm text-white/70">
               In-person sessions at Kiln — 219 N 19th Ave, Bozeman, MT.
-              <br />
-              Virtual sessions via Google Meet.
             </p>
+            <p className="mt-3 text-sm text-white/70">Virtual sessions via Google Meet.</p>
           </div>
         </div>
 
