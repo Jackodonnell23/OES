@@ -41,7 +41,7 @@ export default function TestimonialsPage() {
                   </span>
                 </div>
               )}
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-1 flex-col justify-center p-6">
                 {t.rating && (
                   <div
                     className="mb-2 text-amber-500"
@@ -51,7 +51,7 @@ export default function TestimonialsPage() {
                     {"☆".repeat(5 - t.rating)}
                   </div>
                 )}
-                <blockquote className="flex-1 text-foreground/80">
+                <blockquote className="text-foreground/80">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <div className="mt-4 flex items-center justify-between">
